@@ -1,0 +1,348 @@
+{
+    "big": [
+        {
+            "name": "Głupiec",
+            "short":"Duch",
+            "1": "Szaleństwo, Manie, Ekstrawagancja, Majaczenie, Pasja, Entuzjazm, Szał",
+            "0": "Zaniedbanie, Nieobecność, Złe decyzje, Niezdecydowanie, Apatia"
+        },{
+            "name": "Mag",
+            "short":"Siła Woli",
+            "1": "Umiejętności, Dyplomacja, Pewność Siebie, Elastyczność, Dominacja, Strategia",
+            "0": "Słaba Wola, Niesforność, Opóźnienie, Niepewność, Grzeszność, Niezdecydowanie"
+        },{
+            "name": "Papaj",
+            "short":"Sekretna Wiedza",
+            "1": "Mądrość, Zdrowy Rozsądzek, Nauka, Obiektywność, Dalekowzroczność, Spostrzegawczość, Niezamężność, Brak Emocji, Nauczyciel, Zbyt praktyczny",
+            "0": "Ignorancja, brak zrozumienia, Egoizm, Niewłaściwy Osąd, Płytkość"
+        },{
+            "name": "Cesarzowa",
+            "short":"Płodność, Matka, Siostra, Żona",
+            "1": "Kobiecość, Aktywność, Płodność, Bogactwo, Kara, Ślub, Przywdódczość, Decyzyjność,  Inlulicja",
+            "0": "NIezdecydowanie, Bierność, Bezczynność, Rozproszenie, Niepokój, Bieda, Bezpłodność"
+        },{
+            "name": "Imperator",
+            "short":"Samokontrola w inteligencji, Ojciec, Brat, Mąż",
+            "1": "Potęga, Bogactwo, Osiągnięcie, Stabilność, Niezłomny Duch, Wpływ, Presja, Siła, Dążenie do celu, Przekonanie, Komunikatywność,",
+            "0": "Słabość, Poddatny na Wpływ, Rozemocjonowany, Niezdecydowany,"
+        },{
+            "name": "Kapłan",
+            "short":"Dogmat, Sprzymierzeniec",
+            "1": "Ceremonialność, Człowieczeństwo, Życzliwość, Inspiracja, Niewola, Bezczynność, Wierność, Ponad Normę, Ryuałalność, Wyrozumiałość",
+            "0": "Ślepa Uprzejmość, Poddatność , Bezsilność, Słaby Punkt, Brak Wiary, Kruchość, Zrzeczenie się, Marność"
+        },{
+            "name": "Kochankowie",
+            "short":"Równowaga",
+            "1": "Miłość, Piękność, Jedność, Romans, Zaufanie, Zaślepienie, Optymizm, Pozwalac sobie, konieczność testowania lub poddania tropie, Walka, Między sacrum a profanum, Dowodowość, Tęsknota",
+            "0": "Przegranie testu, Niewierność, Rozłam, Frustracja, Zalężnośc od innych, Lekkomyślność, Zmienność"
+        },{
+            "name": "Rydwan",
+            "short":"Sprawiedliwość",
+            "1": "Przeciwności prawdopodobnie pokonane, sprzeczne wpływy, zwirowania, zemsta, sukces, ucieczka od rzeczywistości zakłopotanie, potrzeba nadzoru",
+            "0": "Niezdecydowanie, Dałszywe Oskarżenie, Fałsywy Trop, Fanatyzm, Surowy Osąd, Nadużywanie},"
+        },{
+            "name": "Pustelnik",
+            "short":"Przewodnik",
+            "1": "Wiedza, Rada, Troska, Roztropność, Ostrzożność, Rezygnacja, Wycofanie, Błędny, Wypieranie Faktów, Posiadacz Sekretów",
+            "0": "Nieostrzność, Niewłaściwa Rada, Pochopność, Dezorientacja"
+        },{
+            "name": "Koło fortuny",
+            "short":"Los",
+            "1": "Przeznaczenie, Fortuna, Wynik, Szczęście, Wybawienie, Specjalna Nagroda, Niezwykła Strata, Skutek, Wniosek",
+            "0": "Porażka, Złamanie sekwencji, Przerwanie, Niezgodność, Nieoczekiwane Wydażenia."
+        },{
+            "name": "Siła",
+            "short":"Wieczna siła",
+            "1": "Siła, Odwaga, Roztropność, Energia, Determinacja, Bunt, Akcja, Hart,  Wrodzony Instynkt, Groliwość, Zapał, Osiągnięcie w znacznym niebezpieczeństwie, Podbój, Bohaterstwo, Męskość, Wysportowanie",
+            "0": "Słabość, Małostkowość, Chorowitość, Tyrannia, Brak Wiary, Bezpłodność"
+        },{
+            "name": "Wisielec",
+            "short":"Reinkarnacja i Poświęcenie",
+            "1": "Życie w zawieszeniu, Przemiana, Apatia, Otępienie, Nuda, Porzucenie, Poświęcenie, Skrucha, Przeregulowanie, Regeneracja, Poprawa, Poddanie się",
+            "0": "Brak Ofiary, Niepozbieranie się, Zaabsorwowanie, Ego, Fałszywa Tożsamość, Niepotrzebna Ofiara"
+        },{
+            "name": "Śmierć",
+            "short":"Transformacja",
+            "1": "Niespodziewana zmiana, Utrata, Przegrana, Koniec Znajomości, Utrata Bezpieczeństwa, Choroba, Śmierć",
+            "0": "Stagnacja, Unieruchomienie, Powolna zmiana, częściowa zmiana, uniknięcie ważnego wydażenia, bezwładność"
+        },{
+            "name": "Wstrzemięźliwość",
+            "short":"Samokontrola Woli",
+            "1": "Umiar, Cierpilowść, Połączenie, Dobry Wplyw, Zjednoczenie, Wzmocnienie, Rodziciele, Światowść, Dobry Znak, Pewnośc Siebie, Samozadwolenie",
+            "0": "Niezgoda, Konflikt, Wrogość, Niecierpliowść, Sterylność, Frustracja, Dążenie do Ładu"
+        },{
+            "name": "Diabeł",
+            "short":"Podporządkowany Umysł",
+            "1": "Podporządkowanie, Niewola, Spetanie, Wabik, Niechęć, Dziwne Doświadczenia, Brak Umiejętności, Przemoc, Szok, Śmiertelność, Egoizm, Odporność na Zło, Samozniszczenie, Brak Zasad",
+            "0": "Uwolnienie, Wytchnienie, Uznanie, Upośledzenie"
+        },{
+            "name": "Wieża",
+            "short":"Destrukcja",
+            "1": "Szybka natychmiastowa zmiana, Rozpad relacji, Niespodzienwane Wydarzenia, Zakończenie, NIeszczęscie, Upadek, Kołoty, Straszna Zmiana, Utrata Stabilności / Pieniędzy / Miłości",
+            "0": "Ciągła Opresja, Rutyna, Zamknięty w Nieszczęsciu"
+        },{
+            "name": "Gwiazda",
+            "short": "Wiara i Nadzieja",
+            "1": " Wiara, Inspiracja, Jasny Osąd, Przyszłość miesza się z Przeszłością, Spełnienie, Przyjemność, Obiecujaca Sytuacja",
+            "0": "Niespełniona Nadzieja, Rozczarowanie, Brak Oportunity, Upór"
+        },{
+            "name": "Księżyc",
+            "short":"Inspiracja",
+            "1": "Oszustwo, Zmierzch, Zapomnienie, Oszustwo, Ostrożność, Ostrzeżenie, Zły Wplyw, Ukryty Motyw, Egoizm, chytrość, fałszywa obietnica, Hańba, Oszczerstwo, Podatność, Bycie Wykorzystywanym, Wpadnięcie w tarapaty, Niebiezpieczeństwo",
+            "0": "Drobne Oszustwo, Drobny Błąd, Poddanie się Pokusie, Przejęcie inicjatywy"
+        },{
+            "name": "Słońce",
+            "short":"Spokój Umysłu",
+            "1": "Sadysfakcja, Ukończenie, Kontent, Skuces, Przychlna Relacja, Miłośc, Zabawa, Poświęcenie, Bezineresowność, Sentyment, Zaręczyny, Dobry Znak, Dobrzy Przyjaciel, Dobry Nastrój, Ciepło, Szczerość, Osiągnięcia",
+            "0": "Nieszczęście, Samotność, Anulowanany Plan, Brak przyjaciół"
+        },{
+            "name": "Osąd",
+            "short":"Sumienie",
+            "1": "Pokuta, Osąd, możliwość, że obecne postępowanie wobec innych ludzi jest niesprawiedliwe i nieuprzejme, Odmłodzenie, Awans, Pragnienie Nieśmiertelności, Nieuczciwa Przewaga, Korzystny Osąd",
+            "0": "Opóźnienie, Niechęć, Wypieranie Faktów, Brak Decyzji, Rozwód, Złodziej, Odosobnienie"
+        },{
+            "name": "Świat",
+            "short":"Rzeczywistość",
+            "1": "Osiągnięcie, Ukonczenie, Ideał, Ostateczna Zmiana, Wynik Starań, Sukces, Pewność, Upewnienie się, Synteza, Dokonania, Zdolność, Nagroda, Życie Wieczne, Oswobodzenie",
+            "0": "Defekt, Niedoskonałość, Porażka w Misji, Brak Perspektywy, Brak Wizji, Rozczarowanie, Porażka"
+        } 
+    ],
+    "small": {
+        "Miecze": [
+            {
+                "name": "Król",
+                "1": "Aktywna i zdeterminowana osoba, Autorytatywny, Rozkazujący, Bezkompromisowy, Kontrolowany, Sprawiedliwość, Siła, Wyższość, Profesjonalista, Wysoce Analityczny",
+                "0": "Osoba, która może doprowadzić sprawę do zrujnowania, Egoizm, Konflikt"
+            },{
+                "name": "Królowa",
+                "1": "Ostre, Bystre, Perspektywiczne, Nieszczęście, Samotność,",
+                "0": "Wąskie Myślenie, Małostkowość, Fanatyzm, Fałsz, Mściwość, Zdradziecki"
+            },{
+                "name": "Rycerz",
+                "1": "Odważy, Wyszkolony, Opozycja i Wojna, Heroiczne Zdarzenie, Zdolność",
+                "0": "Brak zdolności, Nieostrożność, Uproszczenie, Niezgoda, Błąd w Emocjach"
+            },{
+                "name": "Szelma",
+                "1": "Przebicie, Penetracja, Czujność, Zręczność, Aktywna Młodość, Dyskretny",
+                "0": "Oszust, Nieprzewidziany, Choroba, Bezsilność"
+            },{
+                "name": "10",
+                "1": "Ruina, Ból, Spustoszenie, NIeszczęście, Kłopoty, Żałość, Rozczarowanie",
+                "0": "Benefit, Tymczasowy zysk, Sukces, Przysługa, Przewaga"
+            },{
+                "name": "9",
+                "1": "Nędza, Kłótnia, Nieszczęście,Niepokój o miłość, Rozpacz",
+                "0": "Wątpliwość, oszczercze plotki, wstyd, skrupuły, Uzasadniony Strach"
+            },{
+                "name": "8",
+                "1": "Kryzys, nieszczęście, uwięzienie, krytyka, choroba, oszczerstwo",
+                "0": "Zdrada w przeszłości, trudności, przygnębiony stan umysłu, niepokój, śmiertelność"
+            },{
+                "name": "7",
+                "1": "Nowe plany, życzenia, wysiłki, wytrwałość, próba, fantazja",
+                "0": "Kłótnie, kłótnie, niepewność, rada lub rada, oszczerstwa"
+            },{
+                "name": "6",
+                "1": "Podróż, Droga, trasa, próba, przez trudności, celowy sposób, sukces",
+                "0": "rozpaczliwa sytuacja, niechciana propozycja, spowiedź, deklaracja"
+            },{
+                "name": "5",
+                "1": "Podbój, klęska, degradacja, odwołanie, hańba, przeciwnicy",
+                "0": "Niepewny pogląd, słabość, możliwe nieszczęście spotykające przyjaciela, uwodzenie, pochówek"
+            },{
+                "name": "4",
+                "1": "Oddech, odpoczynek, odpoczynek, uzupełnienie, samotność, wygnanie, odwrót",
+                "0": "Aktywność, ostrożność, oszczędność, chęć odzyskania utraconych, roztropność"
+            },{
+                "name": "3",
+                "1": "Nieobecność, smutek, spór, usunięcie, odwrócenie uwagi, sprzeciw, opóźnienie",
+                "0": "Rozproszenie, błąd, niezgodność, separacja, strata, osamotnienie, wyobcowanie"
+            },{
+                "name": "2",
+                "1": "zrównoważona siła, harmonia, jędrność, czynniki równoważące, pat, sympatia, zgoda",
+                "0": "Fałsz, wprowadzenie w błąd, zdrada, fałszywy przyjaciel, kłamstwa, hańba"
+            },{
+                "name": "1",
+                "1": "Wielka determinacja, inicjatywa, siła, aktywność, nadmiar, triumf, władza, płodność, dobrobyt, miłość, głębokie uczucia emocjonalne, mistrzostwo, podbój",
+                "0": "Klęska, katastrofa tyranii, przeszkoda, bezpłodność, utrudnienia"
+            }
+        ],
+        "Amulety": [
+            {
+                "name": "Król",
+                "1": "Uczciwy i sumienny, przyjacielski, wykształcony, ojcowski",
+                "0": "Ostrożność, rygor, bezwzględność, surowość, prostota, dogmatyczne, celowe, nadmierne i przesadzone pomysły"
+            },{
+                "name": "Królowa",
+                "1": "Osoba sympatyczna i wyrozumiała, honorowa, przyjacielska, kochająca, praktyczna, pełna kobiecego uroku i wdzięku",
+                "0": "Wytrwałość, oszustwo, możliwa niewierność, niestabilność emocjnoalna, zmienność, sprzeciw"
+            },{
+                "name": "Rycerz",
+                "1": "Podróż, przejście w nieznane, zmiana, ucieczka, nieobecność",
+                "0": "Rozłam, Niezgoda, przerwa, nieoczekiwana zmiana, usunięcie, dyskusja"
+            },{
+                "name": "Szelma",
+                "1": "Osoba wierna i lojalna, emisariusz, obcy o dobrych intencjach, osoba konsekwentna",
+                "0": "Niezdecydowanie w postępowaniu, opór, niestabilność, plotka, niezadowolenie"
+            },{
+                "name": "10",
+                "1": "Problemy, które wkrótce zostaną rozwiązane, dążenie do osiągnięcia celu, jakim jest utrzymanie określonego poziomu lub pozycji, wykorzystywanie władzy do samolubnego celu",
+                "0": "trudności, intrygi, zdrada, zdrajca, jakieś straty będą miały miejsce"
+            },{
+                "name": "9",
+                "1": "Oczekiwanie trudności i zmian, oczekiwanie, ucisk, oczekiwanie, ukryci wrogowie, oszustwo, przewanie bierzącego konflikut",
+                "0": "Przeciwności, problemy, opóźnienia, katastrofa, bariery do pokonania, zły stan zdrowia"
+            },{
+                "name": "8",
+                "1": "Szybka aktywność, szybkość, pośpiech, podjęta decyzja",
+                "0": "Ciernie sporów, zazdrości, nękania, kłótni, zwłoka, niezgody"
+            },{
+                "name": "7",
+                "1": "Sukces, zysk, pokonywanie przeszkód i wyzwań, przewaga",
+                "0": "Konsternacja, niepokój, zakłopotanie, wahanie powodujące straty, zakłopotanie"
+            },{
+                "name": "6",
+                "1": "Triumf, dobre wieści, awans, oczekiwanie, spełnione pragnienia",
+                "0": "Bezterminowe opóźnienie, strach, nielojalność, powierzchowna korzyść"
+            },{
+                "name": "5",
+                "1": "niezaspokojone pragnienia, walka, praca, spór, przeszkody",
+                "0": "Podstępne sprzeczności, złożoność, przestroga przed niezdecydowaniem"
+            },{
+                "name": "4",
+                "1": "Romans, społeczeństwo, harmonia, dobrobyt, pokój, owoc pracy",
+                "0": "niespełniony romans, niepewność, nadszarpnięta uroda, niepełne szczęście"
+            },{
+                "name": "3",
+                "1": "Praktyczna wiedza, siła, przedsiębiorczość, handel, kompromis",
+                "0": "Pomoc z ukrytym motywem, zdrada, ustanie przeciwności"
+            },{
+                "name": "2",
+                "1": "Osoba dojrzała, gospodyni, osiąganie celów i potrzeb, śmiałość, osobowość dominująca",
+                "0": "Smutek, kłopoty, utrata wiary, niespodziewana niespodzianka"
+            },{
+                "name": "1",
+                "1": "Stworzenie, początek, fortuna, początek przedsięwzięcia, narodziny dziecka, przygoda",
+                "0": "Fałszywy start, zachmurzone perspektywy, dekadencja, upokorzenie, anulowanie planów"
+            }
+        ],
+        "Klepsydry": [
+            {
+                "name": "Król",
+                "1": "Odpowiedzialność i kreatywność, Uczony, profesjonalista, biznesmen, Taktowny, uprzejma, rzetelna, artysta, hojna, prawnik, naukowiec",
+                "0": "Artysta, temperament, dwulicowość, nieuczciwość, skandal, ruina, niesprawiedliwość, przebiegły człowiek bez cnoty, chytry w kontaktach"
+            },{
+                "name": "Królowa",
+                "1": "Osoba serdeczna i uczciwa, oddana żona, praktyczna, uczciwa",
+                "0": "Niekonsekwencja honoru, nie można ufać, występek, nieuczciwość"
+            },{
+                "name": "Rycerz",
+                "1": "Wkrótce może pojawić się zaproszenie lub okazja, przyjazd, awans, atrakcja, wyzwanie, propozycja",
+                "0": "Subtelność, podstęp, nakłanianie, oszustwo, chytrai przebiegła osoba"
+            },{
+                "name": "Szelma",
+                "1": "Refleksyjny i stanowczy, pilny, lojalny, chętny do oferowania usług i wysiłków na rzecz określonego celu",
+                "0": "Skłonność, zboczenie, podatność, uwodzenie, pochlebca"
+            },{
+                "name": "10",
+                "1": "Dom, szczęście, radość, przyjemność, pokój, miłość, honor, szacunek, cnota",
+                "0": "Utrata przyjaźni, nieszczęście, kłótnia rodzinna, małostkowość, wściekłość, walka"
+            },{
+                "name": "9",
+                "1": "Sukces, przewaga, dobre samopoczucie, dobre zdrowie, zwycięstwo, osiągnięcia materialne",
+                "0": "Błędy, straty materialne, niedoskonałości, niewłaściwa prawda, fałszywa wolność, sprzeciw, różnice, spór"
+            },{
+                "name": "8",
+                "1": "przerwanie wysiłku, nieśmiałość, skromność, porzucony sukces",
+                "0": "szczęście, wysiłek trwa do pełnego sukcesu, wesołość, ucztowanie"
+            },{
+                "name": "7",
+                "1": "Fantazja, głupie zachcianki, marzenia na jawie, iluzoryczny sukces",
+                "0": "Pragnienie, determinacja, silna siła woli, cel prawie osiągnięty, inteligentny wybór, postanowienie, pragnienie, wola"
+            },{
+                "name": "6",
+                "1": "Wspomnienia, wpływy z przeszłości, nostalgia, tęsknota, dzieciństwo",
+                "0": "Przyszłość, plany, które mogą się nie powieść, które wkrótce nadejdą"
+            },{
+                "name": "5",
+                "1": "Częściowa utrata, przyjaźń bez prawdziwego znaczenia, małżeństwo bez prawdziwej miłości, błąd, spadek, niedoskonałość, niepełny związek partnerski, lament",
+                "0": "Nadzieja perspektywa, sojusz, powinowactwo, powrót starego przyjaciela, ponowne spotkanie"
+            },{
+                "name": "4",
+                "1": "Znużenie, niechęć, wstręt, niemoc, okres bezruchu",
+                "0": "Nowe możliwości, nowa znajomość, nowa wiedza"
+            },{
+                "name": "3",
+                "1": "Wniosek, komfort, uzdrowienie, zadowalający wynik, kompromis",
+                "0": "Nadmierna przyjemność, nadmiar, utrata prestiżu, opóźnienia"
+            },{
+                "name": "2",
+                "1": "Miłość, początek lub odnowienie przyjaźni, pasja, związek, współpraca, koneksje",
+                "0": "Niezadowalająca miłość, fałszywa przyjaźń, rozłąka, przeciwne pragnienia"
+            },{
+                "name": "1",
+                "1": "Spełnienie doskonałość, radość, płodność, bogactwo, produktywność",
+                "0": "Zmiana, erozja, niestabilność, bezpłodność, nieodwzajemniona miłość, zamglona radość, fałszywe serce, niekonsekwencja, przemiana"
+            }
+        ],
+        "Klucze": [
+            {
+                "name": "Król",
+                "1": "Osoba z charakterem i inteligencją, zdolności matematyczne, lojalny przyjaciel, niezawodna w małżeństwie, odnoszący sukcesy biznesmen, mądre inwestycje, doświadczony i odnoszący sukcesy lider",
+                "0": "Korupcja, chciwość, niewierność, stary i okrutny człowiek, niebezpieczeństwo, groźba"
+            },{
+                "name": "Królowa",
+                "1": "Bogactwo, hojność, bezpieczeństwo, wolność, łaska, godność, dobrobyt",
+                "0": "Fałszywy dobrobyt, niepewność, podejrzenie, zaniedbanie obowiązków, osoba złośliwa, bojąca się porażki, osoba nieufna"
+            },{
+                "name": "Rycerz",
+                "1": "Osoba dojrzała i odpowiedzialna, metodyczna, wytrwała, pracowita",
+                "0": "Stagnacja, nieostrożność, inercja, ograniczone poglądy dogmatyczne, bezczynność"
+            },{
+                "name": "Szelma",
+                "1": "Studium, głęboka koncentracja i zastosowanie, refleksja, szacunek dla nauki, filantorzysta, zwiastun wiadomości.",
+                "0": "Nielogiczne myślenie, buntowniczość, marnotrawstwo, strata, niekorzystne wieści."
+            },{
+                "name": "10",
+                "1": "Bogactwo, bezpieczeństwo, nienaruszona, rodzina, pochodzenie, spadek, mieszkanie.",
+                "0": "Możliwa strata, ryzyko, rabunek, utrata spadku, rozproszenie, hazard."
+            },{
+                "name": "9",
+                "1": "osiągnięcie, rozeznanie, dalekowzroczność, bezpieczeństwo, roztropność, dobrobyt materialny.",
+                "0": "Zagrożenie bezpieczeństwa, nieuczciwość, rozproszenie, niebezpieczeństwo, burze, zła wiara, możliwa utrata cennej przyjaźni lub cennej własności."
+            },{
+                "name": "8",
+                "1": "szybka praktyka, rzemiosło, szczerość, szczerość, skromność, wysiłek.",
+                "0": "brak ambicji, próżność, wrażliwość, rozczarowanie, lichwa, hipokryzja, intryga"
+            },{
+                "name": "7",
+                "1": "pomysłowość, ciężka praca, postęp, bogactwo, udane interesy.",
+                "0": "Lęk, Niepokój, Niostrożne zachowanie, utrata pieniędzy"
+            },{
+                "name": "6",
+                "1": "Filantropia, życzliwość, Zysk, gratyfikacja, dobroczynność.",
+                "0": "chciwość,  egoizm,  zazdrość,  poważny  błąd,  niespłacona  pożyczka."
+            },{
+                "name": "5",
+                "1": "kłopoty materialne, nędza, strata, porażka, błąd, miłość, przywiązanie.",
+                "0": "Odwrócenie złego trendu, nowe zainteresowanie sprawami, przezwyciężenie ruiny."
+            },{
+                "name": "4",
+                "1": "Utrata bogactwa materialnego, zbieracz, lichwiarz, sknera, skąpiec.",
+                "0": "Utrata środków, przeszkody, napięcie i opóźnienie, rozrzutność."
+            },{
+                "name": "3",
+                "1": "Mistrzostwo, doskonałość, zdolności artystyczne, godność, sława, władza.",
+                "0": "Przeciętność, problemy finansowe, pre- zawód, niższa jakość"
+            },{
+                "name": "2",
+                "1": "Trudność  w  uruchamianiu  nowych  projektów,  zaistniała  trudna  sytuacja,  nowe  kłopoty,  zmartwienie, troska,  zaabsorbowanie.",
+                "0": "Dosadność, umiejętność załatwiania spraw, wymuszona wesołość, list."
+            },{
+                "name": "1",
+                "1": "Doskonałość, osiągnięcia, dobrobyt, szczęście, błogoś(ć, złoto, wielkie bogactwo.",
+                "0": "Pieniądze bez szczęścia, chciwość, złoto głupców."
+            }
+        ]
+    }
+}

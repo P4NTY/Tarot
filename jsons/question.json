@@ -1,0 +1,51 @@
+{
+    "Postać": {
+        "1": "Kim jest ta postać ?",
+        "2": "Jaka była przeszłość ?",
+        "3": "Co nią kieriuje ?",
+        "4": "Jaką ma słabość ?",
+        "5": "Jej silna strona ?"
+    },
+    "Miejsce": {
+        "1": "Jakie jest to miejsce ?",
+        "2": "Czym było ?",
+        "3": "Co się tam stało ?",
+        "4": "Jakie jest zagrożenie ?",
+        "5": "Co jest wyjątkowego tam ?"
+    },
+    "Organizacja": {
+        "1": "Kim są ?",
+        "2": "Jak powstali ?",
+        "3": "Jaki mają cel ?",
+        "4": "Ich słabość ?",
+        "5": "Ich mocna strona ?"
+    },
+    "Wątek": {
+        "1": "Co się dzieje ?",
+        "2": "Jak do tego doszło ?",
+        "3": "Kto/Co za tym stoi ?",
+        "4": "Jaka jest nagroda ?",
+        "5": "Jakie jest zagrożenie ?"
+    },
+    "Potwór": {
+        "1": "Czym jest ?",
+        "2": "Skąd pochodzi ?",
+        "3": "Co nim kieruje ?",
+        "4": "Jak go pokonać ?",
+        "5": "Przed czym się bronić ?"
+    },
+    "Przedmiot": {
+        "1": "Czym on jest ?",
+        "2": "Skąd pochodzi ?",
+        "3": "Jakie niesie zagrożenie ?",
+        "4": "Jaką ma moc ?",
+        "5": "Jaki ma efekt uboczny ?"
+    },
+    "Magia": {
+        "1": "Jaka jest jej natura ?",
+        "2": "Co jest jej źródłem ?",
+        "3": "Co ofruje ?",
+        "4": "Jak się objawia ?",
+        "5": "Jakie niesie zagrożenie ?"
+    }
+}

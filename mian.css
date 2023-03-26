@@ -81,7 +81,7 @@ h1 {
 #quest {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
     gap: 20px;
     margin: 20px;
 }
@@ -149,6 +149,7 @@ h1 {
     background-color: rgb(var(--bright-color));
     overflow: hidden;
     background-size: cover;
+    background-position: center;
     color: rgb(var(--main-color));
 }
 .card .title {
@@ -266,6 +267,7 @@ h1 {
 #showChoice .preview .card{
     width: 50vh;
     height: 80vh;
+    background-position: center;
 }
 #showChoice .preview .card  .title {
     font-size: 48px;
@@ -302,4 +304,86 @@ article#showChoice > div {
 #showChoice button:hover {
     transform: scale(1.1);
     filter: invert(0%);
+}
+
+@media screen and (max-width: 1440px)  {
+    #quest {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-height: 500px) {
+        h1, #description h2, .toSelect h2 {
+            margin-bottom: 0;
+            padding: 0
+        }
+        #showChoice .preview .card h2 {
+            font-size: 20px;
+        }
+        #showChoice .preview .card h4 {
+            font-size: 16px;
+        }
+        #showChoice .preview .card .description {
+            font-size: 14px;
+        }
+        .result .card .description {
+            display: none;
+        }
+        .card .title * {
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    #quest {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h1, #description h2, .toSelect h2 {
+        margin-bottom: 0;
+        padding: 0
+    }
+    .result {
+        flex-direction: column;
+    }
+    .result #description {
+        max-width: 95vw;
+    }
+}
+
+@media screen and (max-width: 500px)  {
+    #quest {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h1, #description h2, .toSelect h2 {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    #showChoice .preview .card {
+        font-size: 14px;
+    }
+    article#showChoice > div {
+        display: grid;
+        grid-template-areas:
+            "card card"
+            "ok no";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px 0px;
+        justify-items: center;
+        align-items: start;
+    }
+    #YES {
+        grid-area: ok;
+    }
+    #NO {
+        grid-area: no;
+    }
+    #showChoice .preview {
+        grid-area: card;
+    }
+    #showChoice .preview .card {
+        height: 75vh;
+    }
+    #board {
+        transform: scale(0.8);
+    }
 }

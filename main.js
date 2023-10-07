@@ -46,7 +46,7 @@ function drawCard( card ) {
     if ( !!card.type ) div.classList.add(card.type);
 
     // Dodanie obrazka
-    div.style.backgroundImage = `url(/pictures/Głupiec_${card.position}.png)`
+    div.style.backgroundImage = `url(/pictures/${card.name}_${card.position}.png)`
 
     // Dodanie tytułu
     const title = document.createElement('div'),
@@ -140,8 +140,8 @@ function choiceStage(question, deck, level = 1) {
 
 // Pobieramy oba pliki JSON jednocześnie za pomocą funkcji fetch()
 Promise.all([
-  fetch('/jsons/question.json'),
-  fetch('/jsons/cards.json')
+  fetch('./jsons/question.json'),
+  fetch('./jsons/cards.json')
 ])
 .then(function(responses) {
   // Odpowiedzi są zwracane jako obiekt Response, więc trzeba je przekonwertować na dane JSON

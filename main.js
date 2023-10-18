@@ -44,10 +44,9 @@ function drawCard( card ) {
     if ( !!card.short ) div.classList.add('big');
     else div.classList.add('small');
     if ( !!card.type ) div.classList.add(card.type);
-
     // Dodanie obrazka
-    div.style.backgroundImage = `url(/pictures/${card.name}_${card.position}.png)`
-
+    if ( !!card.short ) div.style.backgroundImage = encodeURI(`url(/Tarot/pictures/${card.name}_${card.position}.png)`);
+    else  div.style.backgroundImage = encodeURI(`url(/Tarot/pictures/${card.type}_${card.name}_${card.position}.png)`);
     // Dodanie tytułu
     const title = document.createElement('div'),
         name = document.createElement('h2'),

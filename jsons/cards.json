@@ -74,7 +74,7 @@
             "name": "Diabeł",
             "short":"Podporządkowany Umysł",
             "1": "Podporządkowanie, Niewola, Spetanie, Wabik, Niechęć, Dziwne Doświadczenia, Brak Umiejętności, Przemoc, Szok, Śmiertelność, Egoizm, Odporność na Zło, Samozniszczenie, Brak Zasad",
-            "0": "Uwolnienie, Wytchnienie, Uznanie, Upośledzenie"
+            "0": "Uwolnienie, Wytchnienie, Uznanie, Wzmocnienie"
         },{
             "name": "Wieża",
             "short":"Destrukcja",
@@ -98,13 +98,13 @@
         },{
             "name": "Osąd",
             "short":"Sumienie",
-            "1": "Pokuta, Osąd, możliwość, że obecne postępowanie wobec innych ludzi jest niesprawiedliwe i nieuprzejme, Odmłodzenie, Awans, Pragnienie Nieśmiertelności, Nieuczciwa Przewaga, Korzystny Osąd",
+            "1": "Pokuta, Osąd, możliwość, niesprawiedliwe i nieuprzejme, Odmłodzenie, Awans, Pragnienie Nieśmiertelności, Nieuczciwa Przewaga, Korzystny Osąd",
             "0": "Opóźnienie, Niechęć, Wypieranie Faktów, Brak Decyzji, Rozwód, Złodziej, Odosobnienie"
         },{
             "name": "Świat",
             "short":"Rzeczywistość",
             "1": "Osiągnięcie, Ukonczenie, Ideał, Ostateczna Zmiana, Wynik Starań, Sukces, Pewność, Upewnienie się, Synteza, Dokonania, Zdolność, Nagroda, Życie Wieczne, Oswobodzenie",
-            "0": "Defekt, Niedoskonałość, Porażka w Misji, Brak Perspektywy, Brak Wizji, Rozczarowanie, Porażka"
+            "0": "Defekt, Niedoskonałość, Porażka w Misji, Brak Perspektywy, Brak Wizji, Rozczarowanie"
         } 
     ],
     "small": {
@@ -115,7 +115,7 @@
                 "0": "Osoba, która może doprowadzić sprawę do zrujnowania, Egoizm, Konflikt"
             },{
                 "name": "Królowa",
-                "1": "Ostre, Bystre, Perspektywiczne, Nieszczęście, Samotność,",
+                "1": "Ostre, Bystre , Perspektywiczne, Nieszczęście, Samotność,",
                 "0": "Wąskie Myślenie, Małostkowość, Fanatyzm, Fałsz, Mściwość, Zdradziecki"
             },{
                 "name": "Rycerz",
@@ -127,11 +127,11 @@
                 "0": "Oszust, Nieprzewidziany, Choroba, Bezsilność"
             },{
                 "name": "10",
-                "1": "Ruina, Ból, Spustoszenie, NIeszczęście, Kłopoty, Żałość, Rozczarowanie",
+                "1": "Ruina, Ból, Spustoszenie, Nieszczęście, Kłopoty, Żałość, Rozczarowanie",
                 "0": "Benefit, Tymczasowy zysk, Sukces, Przysługa, Przewaga"
             },{
                 "name": "9",
-                "1": "Nędza, Kłótnia, Nieszczęście,Niepokój o miłość, Rozpacz",
+                "1": "Nędza, Kłótnia, Nieszczęście, Niepokój o miłość, Rozpacz",
                 "0": "Wątpliwość, oszczercze plotki, wstyd, skrupuły, Uzasadniony Strach"
             },{
                 "name": "8",
@@ -190,7 +190,7 @@
                 "0": "trudności, intrygi, zdrada, zdrajca, jakieś straty będą miały miejsce"
             },{
                 "name": "9",
-                "1": "Oczekiwanie trudności i zmian, oczekiwanie, ucisk, oczekiwanie, ukryci wrogowie, oszustwo, przewanie bierzącego konflikut",
+                "1": "Oczekiwanie trudności i zmian, ucisk, oczekiwanie, ukryci wrogowie, oszustwo, przewanie bierzącego konflikt",
                 "0": "Przeciwności, problemy, opóźnienia, katastrofa, bariery do pokonania, zły stan zdrowia"
             },{
                 "name": "8",

@@ -1,5 +1,11 @@
+const mainData = {
+    deck: [],
+    question: []
+};
+
+const results = [];
 // Zmienna globalna przechowująca stan wybranych rzeczy
-const result = {
+let result = {
     question: '',
     questions: [],
     answers: []
@@ -7,10 +13,33 @@ const result = {
 // Stos kart odrzuconych
 const trash = [];
 
+function kit_template() {
+    const kit = document.createElement('article');
+    kit.id = `kit_${results.length+1}`;
+    
+    const questions = document.createElement('article');
+    questions.classList.add('questions');
+    questions.innerHTML = `<h1> Wybierz co chcesz zrobić: </h1><section class="quest"></section>`;
+    kit.appendChild(questions);
+
+    const choice = document.createElement('article');
+    choice.classList.add('showChoice','hidden');
+    kit.appendChild(choice);
+
+    const result = document.createElement('article');
+    result.classList.add('result','hidden');
+    result.innerHTML = `<section class="board" ></section><div><section class="description"></section><button>Kolejne rozdanie</button></div></article>`;
+    kit.appendChild(result);
+
+    return kit;
+}
+
 // Odsłonięciue wyniku
 const _showResult = () => {
-    document.querySelector('.result').classList.remove('hidden');
-    document.querySelector('.questions').classList.add('hidden');
+    const current = document.getElementById(`kit_${results.length + 1}`);
+    current.querySelector('.result').classList.remove('hidden');
+    current.querySelector('.questions').classList.add('hidden');
+    setTimeout(()=>current.scrollIntoView({ behavior: 'smooth' }) , 10);
 }
 
 // Tasowanie tali
@@ -45,8 +74,14 @@ function drawCard( card ) {
     else div.classList.add('small');
     if ( !!card.type ) div.classList.add(card.type);
     // Dodanie obrazka
-    if ( !!card.short ) div.style.backgroundImage = encodeURI(`url(/Tarot/pictures/${card.name}_${card.position}.png)`);
-    else  div.style.backgroundImage = encodeURI(`url(/Tarot/pictures/${card.type}_${card.name}_${card.position}.png)`);
+    if (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
+        if ( !!card.short ) div.style.backgroundImage = encodeURI(`url(/pictures/${card.name}_${card.position}.png)`);
+        else  div.style.backgroundImage = encodeURI(`url(/pictures/${card.type}_${card.name}_${card.position}.png)`);
+    } else {
+        if ( !!card.short ) div.style.backgroundImage = encodeURI(`url(/Tarot/pictures/${card.name}_${card.position}.png)`);
+        else  div.style.backgroundImage = encodeURI(`url(/Tarot/pictures/${card.type}_${card.name}_${card.position}.png)`);
+    }
+    
     // Dodanie tytułu
     const title = document.createElement('div'),
         name = document.createElement('h2'),
@@ -63,13 +98,14 @@ function drawCard( card ) {
     desc.classList.add('description');
     desc.innerText = card.description;
     div.appendChild(desc);
-
+    
     return div;
 }
 
 // Budowa opisu układu tarota
 function seeDescription() {
-    const description = document.getElementById('description');
+    const current = document.getElementById(`kit_${results.length + 1}`);
+    const description = current.querySelector('.result section.description');
     const title = document.createElement('h2');
     title.innerText = result.question;
     description.appendChild(title);
@@ -86,30 +122,63 @@ function seeDescription() {
         section.appendChild(answer);
 
         description.appendChild(section);
+
+        section.addEventListener('mouseover', (event) => {
+            const getParentID = (elem) => elem.parentElement.id ? elem.parentElement : getParentID(elem.parentElement);
+            const kit = getParentID(event.target);
+            const child = Array(...event.target.parentElement.parentElement.children).map( (element,index) => element === event.target.parentElement ? index : false ).filter( x => x)[0];
+            if (!child) return ;
+            const card = kit.querySelector(`.board > div:nth-child(${child})`);
+            card.classList.add('select');
+        }, false);
+        section.addEventListener("mouseout", (event) => {
+            const getParentID = (elem) => elem.parentElement.id ? elem.parentElement : getParentID(elem.parentElement);
+            const kit = getParentID(event.target);
+            const child = Array(...event.target.parentElement.parentElement.children).map( (element,index) => element === event.target.parentElement ? index : false ).filter( x => x)[0];
+            if (!child) return ;
+            const card = kit.querySelector(`.board > div:nth-child(${child})`);
+            card.classList.remove('select');
+        }, false);
     }
+    _showResult();
+    results.push(result);
+    current.querySelector('.result button').addEventListener('click', function (event) {
+        event.target.classList.add('hidden');
+        const breaker = document.createElement('hr');
+        document.body.appendChild(breaker);
+        document.body.appendChild(kit_template());
+        const current = document.getElementById(`kit_${results.length + 1}`);
+
+        createList(current.querySelector('.questions .quest'), mainData.question, mainData.deck);
+        setTimeout(()=>current.scrollIntoView({ behavior: 'smooth' }) , 10);
+    })
+    result = {
+        question: '',
+        questions: [],
+        answers: []
+    };
 }
 
 // Akceptacja karty
 function choiceStage(question, deck, level = 1) {
-    const board = document.getElementById('board');
-    const box = document.getElementById('showChoice');
-    box.innerHTML = `<h1 class="stage"></h1>
-    <div>
-    <button id="YES">✅</button>
-    <section class="preview"></section>
-    <button id="NO">❌</button>
-    </div>`;
+    const current = document.getElementById(`kit_${results.length + 1}`);
+    const box = current.querySelector('.showChoice');
+    box.innerHTML = `<h1 class="stage"></h1><div><button id="YES">✅</button><section class="preview"></section><button id="NO">❌</button></div>`;
     box.classList.remove('hidden');
     document.querySelector('.questions').classList.add('hidden');
 
     // Dodanie pytania
-    box.querySelector('.stage' ).innerText = `${result.question}: ${question[level]}`;
+    box.querySelector('.stage').innerText = `${result.question}: ${question[level]}`;
 
     // Rozpatrywanie karty
     const card = drawCard(deck.shift());
     box.querySelector('.preview').appendChild(card);
     // Zatwierdzenie kary
     box.querySelector('#YES').addEventListener( 'click', function () {
+        const current = document.getElementById(`kit_${results.length + 1}`);
+        const board = current.querySelector('.board');
+        const box = current.querySelector('.showChoice');
+
         // Dodanie karty do układu
         card.style.gridArea = 'a' + (level -1);
         board.appendChild(card);
@@ -125,8 +194,8 @@ function choiceStage(question, deck, level = 1) {
         // Koniec układania ?
         if (level < 5 ) choiceStage(question,deck,++level);
         else {
-            box.classList.add('hidden');
             seeDescription();
+            box.classList.add('hidden');
         }
     } )
 
@@ -135,6 +204,36 @@ function choiceStage(question, deck, level = 1) {
         trash.push( card );
         choiceStage(question,deck,level);
     } )
+}
+
+// Tworzenie kafelków z pytaniami
+function createList(box, question, deck) {
+    Object.keys(question).map( elem => {
+        const section = document.createElement('section');
+        section.classList.add('toSelect');
+        section.setAttribute('data-name',elem);
+        // Dodanie tytułu / nazwy kategorii
+        const name = document.createElement('h2');
+        name.innerText = elem;
+        section.appendChild(name);
+        // Budowa listy pytań
+        const ul = document.createElement('ul');
+        Object.keys(question[elem]).forEach( number => {
+            const li = document.createElement('li');
+            li.innerText = question[elem][number];
+            ul.appendChild(li);
+        })
+        section.appendChild(ul);
+        box.appendChild(section);
+    });
+
+    // Dodanie zdarzenia na wybór pytania
+    document.querySelectorAll( '.quest section' ).forEach( section => {
+        section.addEventListener( 'click', function(event) {
+            result.question = this.getAttribute('data-name');
+            choiceStage(question[this.getAttribute('data-name')], shuffle(deck));
+        })
+    })
 }
 
 // Pobieramy oba pliki JSON jednocześnie za pomocą funkcji fetch()
@@ -154,33 +253,10 @@ Promise.all([
     const deck = [...tarot.big];
     Object.keys(tarot.small).forEach( key => {
         tarot.small[key].forEach( (card) => deck.push({...card, type: key}) )
-    })
-    // Tworzenie kafelków z pytaniami
-    Object.keys(question).forEach( elem => {
-        const section = document.createElement('section');
-        section.classList.add('toSelect');
-        section.setAttribute('data-name',elem);
-        // Dodanie tytułu / nazwy kategorii
-        const name = document.createElement('h2');
-        name.innerText = elem;
-        section.appendChild(name);
-        // Budowa listy pytań
-        const ul = document.createElement('ul');
-        Object.keys(question[elem]).forEach( number => {
-            const li = document.createElement('li');
-            li.innerText = question[elem][number];
-            ul.appendChild(li);
-        })
-        section.appendChild(ul);
-        document.getElementById('quest').appendChild(section);
-    })
-    // Dodanie zdarzenia na wybór pytania
-    document.querySelectorAll( '#quest section' ).forEach( section => {
-        section.addEventListener( 'click', function() {
-            result.question = this.getAttribute('data-name');
-            choiceStage(question[this.getAttribute('data-name')], shuffle(deck));
-            _showResult();
-        })
-    })
+    });
+    mainData.deck = deck;
+    mainData.question = question;
+    const current = document.getElementById(`kit_${results.length + 1}`);
+    createList(current.querySelector('.questions .quest'), question, deck);
 })
-.catch((error) => console.error('Wystąpił błąd: ' + error) );
+.catch((error) => console.error('Wystąpił błąd: ' + error));

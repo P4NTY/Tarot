@@ -49,7 +49,7 @@
             "name": "Koło fortuny",
             "short":"Los",
             "1": "Przeznaczenie, Fortuna, Wynik, Szczęście, Wybawienie, Specjalna Nagroda, Niezwykła Strata, Skutek, Wniosek",
-            "0": "Porażka, Złamanie sekwencji, Przerwanie, Niezgodność, Nieoczekiwane Wydażenia."
+            "0": "Porażka, Złamanie sekwencji, Przerwanie, Niezgodność, Nieoczekiwane Wydażenia"
         },{
             "name": "Siła",
             "short":"Wieczna siła",
@@ -238,7 +238,7 @@
             },{
                 "name": "Rycerz",
                 "1": "Wkrótce może pojawić się zaproszenie lub okazja, przyjazd, awans, atrakcja, wyzwanie, propozycja",
-                "0": "Subtelność, podstęp, nakłanianie, oszustwo, chytrai przebiegła osoba"
+                "0": "Subtelność, podstęp, nakłanianie, oszustwo, chytra, przebiegła osoba"
             },{
                 "name": "Szelma",
                 "1": "Refleksyjny i stanowczy, pilny, lojalny, chętny do oferowania usług i wysiłków na rzecz określonego celu",
@@ -300,48 +300,48 @@
                 "0": "Stagnacja, nieostrożność, inercja, ograniczone poglądy dogmatyczne, bezczynność"
             },{
                 "name": "Szelma",
-                "1": "Studium, głęboka koncentracja i zastosowanie, refleksja, szacunek dla nauki, filantorzysta, zwiastun wiadomości.",
-                "0": "Nielogiczne myślenie, buntowniczość, marnotrawstwo, strata, niekorzystne wieści."
+                "1": "Studium, głęboka koncentracja i zastosowanie, refleksja, szacunek dla nauki, filantorzysta, zwiastun wiadomości",
+                "0": "Nielogiczne myślenie, buntowniczość, marnotrawstwo, strata, niekorzystne wieści"
             },{
                 "name": "10",
-                "1": "Bogactwo, bezpieczeństwo, nienaruszona, rodzina, pochodzenie, spadek, mieszkanie.",
-                "0": "Możliwa strata, ryzyko, rabunek, utrata spadku, rozproszenie, hazard."
+                "1": "Bogactwo, bezpieczeństwo, nienaruszona, rodzina, pochodzenie, spadek, mieszkanie",
+                "0": "Możliwa strata, ryzyko, rabunek, utrata spadku, rozproszenie, hazard"
             },{
                 "name": "9",
-                "1": "osiągnięcie, rozeznanie, dalekowzroczność, bezpieczeństwo, roztropność, dobrobyt materialny.",
-                "0": "Zagrożenie bezpieczeństwa, nieuczciwość, rozproszenie, niebezpieczeństwo, burze, zła wiara, możliwa utrata cennej przyjaźni lub cennej własności."
+                "1": "osiągnięcie, rozeznanie, dalekowzroczność, bezpieczeństwo, roztropność, dobrobyt materialny",
+                "0": "Zagrożenie bezpieczeństwa, nieuczciwość, rozproszenie, niebezpieczeństwo, burze, zła wiara, możliwa utrata cennej przyjaźni lub cennej własności"
             },{
                 "name": "8",
-                "1": "szybka praktyka, rzemiosło, szczerość, szczerość, skromność, wysiłek.",
+                "1": "szybka praktyka, rzemiosło, szczerość, szczerość, skromność, wysiłek",
                 "0": "brak ambicji, próżność, wrażliwość, rozczarowanie, lichwa, hipokryzja, intryga"
             },{
                 "name": "7",
-                "1": "pomysłowość, ciężka praca, postęp, bogactwo, udane interesy.",
+                "1": "pomysłowość, ciężka praca, postęp, bogactwo, udane interesy",
                 "0": "Lęk, Niepokój, Niostrożne zachowanie, utrata pieniędzy"
             },{
                 "name": "6",
-                "1": "Filantropia, życzliwość, Zysk, gratyfikacja, dobroczynność.",
-                "0": "chciwość,  egoizm,  zazdrość,  poważny  błąd,  niespłacona  pożyczka."
+                "1": "Filantropia, życzliwość, Zysk, gratyfikacja, dobroczynność",
+                "0": "chciwość,  egoizm,  zazdrość,  poważny  błąd,  niespłacona  pożyczka"
             },{
                 "name": "5",
-                "1": "kłopoty materialne, nędza, strata, porażka, błąd, miłość, przywiązanie.",
-                "0": "Odwrócenie złego trendu, nowe zainteresowanie sprawami, przezwyciężenie ruiny."
+                "1": "kłopoty materialne, nędza, strata, porażka, błąd, miłość, przywiązanie",
+                "0": "Odwrócenie złego trendu, nowe zainteresowanie sprawami, przezwyciężenie ruiny"
             },{
                 "name": "4",
-                "1": "Utrata bogactwa materialnego, zbieracz, lichwiarz, sknera, skąpiec.",
-                "0": "Utrata środków, przeszkody, napięcie i opóźnienie, rozrzutność."
+                "1": "Utrata bogactwa materialnego, zbieracz, lichwiarz, sknera, skąpiec",
+                "0": "Utrata środków, przeszkody, napięcie i opóźnienie, rozrzutność"
             },{
                 "name": "3",
-                "1": "Mistrzostwo, doskonałość, zdolności artystyczne, godność, sława, władza.",
-                "0": "Przeciętność, problemy finansowe, pre- zawód, niższa jakość"
+                "1": "Mistrzostwo, doskonałość, zdolności artystyczne, godność, sława, władza",
+                "0": "Przeciętność, problemy finansowe, pre-zawód, niższa jakość"
             },{
                 "name": "2",
-                "1": "Trudność  w  uruchamianiu  nowych  projektów,  zaistniała  trudna  sytuacja,  nowe  kłopoty,  zmartwienie, troska,  zaabsorbowanie.",
-                "0": "Dosadność, umiejętność załatwiania spraw, wymuszona wesołość, list."
+                "1": "Trudność  w  uruchamianiu  nowych  projektów,  zaistniała  trudna  sytuacja,  nowe  kłopoty,  zmartwienie, troska,  zaabsorbowanie",
+                "0": "Dosadność, umiejętność załatwiania spraw, wymuszona wesołość, list"
             },{
                 "name": "1",
-                "1": "Doskonałość, osiągnięcia, dobrobyt, szczęście, błogoś(ć, złoto, wielkie bogactwo.",
-                "0": "Pieniądze bez szczęścia, chciwość, złoto głupców."
+                "1": "Doskonałość, osiągnięcia, dobrobyt, szczęście, błogość, złoto, wielkie bogactwo",
+                "0": "Pieniądze bez szczęścia, chciwość, złoto głupców"
             }
         ]
     }

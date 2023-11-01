@@ -10,6 +10,9 @@
     --bg-gradnient-2: #576B81;
     --bg-gradnient-3: #869AB1;
     --bg-gradnient-4: #B8CDE5;
+
+    --normal-position: 165, 193, 255;
+    --reversed-position: 255, 165, 165;
 }  
 
 @keyframes gradient {
@@ -36,7 +39,7 @@
 	}
 }
 
-h1, #description h2, .toSelect h2 {
+h1, .description h2, .toSelect h2 {
     color: rgb(var(--bright-color));
     border-bottom: 3px solid rgb(var(--accet-color));
     margin: 0px 0px 20px;
@@ -47,11 +50,11 @@ h1, #description h2, .toSelect h2 {
 
 h3 {
     color: rgb(var(--action-color));
+    margin: 0;
 }
 
 .background {
     background: linear-gradient(-45deg, rgb(var(--main-color)), var(--bg-gradnient-1), var(--bg-gradnient-2), var(--bg-gradnient-1));
-    background-size: 200%;
     animation: gradient 10s ease infinite;
     position: fixed;
     top: 0;
@@ -59,6 +62,8 @@ h3 {
     right: 0;
     bottom: 0;
     z-index: -1;
+    /* height: 100vh; */
+    /* background-size: 200%; */
 }
 
 .background object {
@@ -78,15 +83,21 @@ h1 {
     text-align: center;
 }
 
-#quest {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
-    gap: 20px;
-    margin: 20px;
+p {
+    margin: 0;
+    padding: 5px 0;
 }
 
-#quest section {
+.quest {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 20px;
+    margin: auto;
+    width: 90vw;
+}
+
+.quest section {
     background: rgba(var(--main-color) , 0.5 );
     border: 3px solid rgb(var(--action-color));
     padding: 20px;
@@ -97,12 +108,12 @@ h1 {
     color: rgb(var(--bright-color));
 }
 
-#quest .toSelect:hover{
+.quest .toSelect:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
 
-#quest section::after {
+.quest section::after {
     content: "";
     position: absolute;
     top: 0;
@@ -110,11 +121,10 @@ h1 {
     right: 0;
     bottom: 0;
     z-index: -1;
-    /* box-shadow: 0 0 20px 10px rgb(var(--action-color); )*/
     border-radius: 25px;
 }
 
-#quest li {
+.quest li {
     margin: 25px 5px;
 }
 
@@ -124,7 +134,7 @@ h1 {
     justify-content: space-around;
 }
 
-#board {
+.board {
     width: fit-content;
     height: auto;
     display: grid;
@@ -141,6 +151,10 @@ h1 {
     padding: 5px;
 }
 .card {
+	--_main: var(--mian, var(--main-color));
+	--_action: var(--action, var(--action-color));
+	--_style: var(--style, var(--action-color));
+	
     height: 30vh;
     width: 20vh;
     border: 7px solid;
@@ -150,12 +164,14 @@ h1 {
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    color: rgb(var(--main-color));
+    color: rgb(var(--_main));
+	border-color: rgb(var(--_style));
 }
 .card .title {
     opacity: 0.5;
     padding: 2px 2px 5px;
     transition: opacity .2s linear;
+    background: rgba(var(--_style), 0.5);
 }
 .card .title * {
     margin: 0;
@@ -171,7 +187,7 @@ h1 {
 }
 
 .card .description {
-    background: rgba(var(--main-color) , 0.5 );
+    background: rgba(var(--_main) , 0.5 );
     font-size: 16px;
     padding: 5px;
     bottom: -100%;
@@ -183,23 +199,18 @@ h1 {
     backdrop-filter: blur(20px);
     color: rgb(var(--bright-color));
     border-top: 2px solid rgb(var(--bright-color));
-    text-shadow: 0 0 2px rgb(var(--main-color));
+    text-shadow: 0 0 2px rgb(var(--_main));
 }
 .card:hover .description {
     bottom: 0;
 }
-.card.normal .title {
-    background: #a5c1ff50;
-}
-.card.reversed .title{
-    background: #ffa5a550;
-}
 .card.normal {
-    border-color: #a5c1ff;
+	--style: var(--normal-position);
 }
 .card.reversed {
-    border-color: #ffa5a5;
+	--style: var(--reversed-position);
 }
+
 .hidden {
     display: none !important;
 }
@@ -214,9 +225,9 @@ h1 {
     width: 80vw;
 }
 
-.result #description {
+.result section.description {
     padding: 20px;
-    max-width: 40vw;
+    width: 40vw;
     background-color: rgba(var(--main-color) , 0.5 );
     color: rgb(var(--bright-color));
     border: 4px solid rgb(var(--action-color));
@@ -225,11 +236,11 @@ h1 {
     font-size: 20px;
 }
 
-.result #description h2, #quest section h2 {
+.result section.description h2, .quest section h2 {
     backdrop-filter: none;
 }
 
-#description section{
+.description section{
     transition: all .2s linear;
     padding-left: 0;
     border-left-width: 0;
@@ -237,16 +248,16 @@ h1 {
     border-color: rgb(var(--accet-color));
 }
 
-#description section:hover {
+.description section:hover {
     padding-left: 40px;
     border-left-width: 5px;
 }
 
-#description b {
+.description b {
     color: rgb(var(--action-color));
 }
 
-#showChoice {
+.showChoice {
     z-index: 1;
     text-align: center;
     position: fixed;
@@ -257,71 +268,69 @@ h1 {
     background-color: #4448;
 }
 
-#showChoice .preview {
+.showChoice .preview {
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
 }
 
-#showChoice .preview .card{
+.showChoice .preview .card{
     width: 50vh;
     height: 80vh;
     background-position: center;
 }
-#showChoice .preview .card  .title {
+.showChoice .preview .card  .title {
     font-size: 48px;
 }
-#showChoice .preview .card  h2 {
+.showChoice .preview .card  h2 {
     font-size: 48px;
 }
-#showChoice .preview .card  h4 {
+.showChoice .preview .card  h4 {
     font-size: 32px;
 }
-#showChoice .preview .card .description {
+.showChoice .preview .card .description {
     font-size: 24px;
 }
 
-article#showChoice > div {
+article.showChoice > div {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#showChoice button {
+.showChoice button {
     font-size: 32px;
     padding: 5px 7px;
     border-radius: 5px;
-    /* background: #4444; */
     background: none;
     border: 3px solid rgb(var(--action-color));
-    /* filter: hue-rotate(90deg); */
     filter: invert(40%);
     cursor: pointer;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#showChoice button:hover {
+.showChoice button:hover {
     transform: scale(1.1);
     filter: invert(0%);
 }
 
 @media screen and (max-width: 1440px)  {
-    #quest {
+    .quest {
         grid-template-columns: repeat(3, 1fr);
     }
     @media screen and (max-height: 500px) {
-        h1, #description h2, .toSelect h2 {
+        h1, .description h2, .toSelect h2 {
             margin-bottom: 0;
             padding: 0
         }
-        #showChoice .preview .card h2 {
+        .showChoice .preview .card h2 {
             font-size: 20px;
         }
-        #showChoice .preview .card h4 {
+        .showChoice .preview .card h4 {
             font-size: 16px;
         }
-        #showChoice .preview .card .description {
+        .showChoice .preview .card .description {
             font-size: 14px;
         }
         .result .card .description {
@@ -334,33 +343,50 @@ article#showChoice > div {
 }
 
 @media screen and (max-width: 768px)  {
-    #quest {
+    .quest {
         grid-template-columns: repeat(2, 1fr);
     }
-    h1, #description h2, .toSelect h2 {
+    h1, .description h2, .toSelect h2 {
         margin-bottom: 0;
         padding: 0
     }
     .result {
         flex-direction: column;
     }
-    .result #description {
-        max-width: 95vw;
+    .result section.description {
+        width: 85vw;
+    }
+
+    .background object {
+        transform: rotate(90deg) scale(4);
+    }
+
+    .board {
+        margin: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "a0 a0"
+            "a1 a2"
+            "a3 a4";
+    }
+    .board > div:first-child {
+        margin: auto;
     }
 }
 
 @media screen and (max-width: 500px)  {
-    #quest {
+    .quest {
         grid-template-columns: repeat(1, 1fr);
     }
-    h1, #description h2, .toSelect h2 {
+    h1, .description h2, .toSelect h2 {
         margin-bottom: 0;
         padding: 0;
     }
-    #showChoice .preview .card {
+    .showChoice .preview .card {
         font-size: 14px;
     }
-    article#showChoice > div {
+    article.showChoice > div {
         display: grid;
         grid-template-areas:
             "card card"
@@ -377,13 +403,43 @@ article#showChoice > div {
     #NO {
         grid-area: no;
     }
-    #showChoice .preview {
+    .showChoice .preview {
         grid-area: card;
     }
-    #showChoice .preview .card {
+    .showChoice .preview .card {
         height: 75vh;
     }
-    #board {
+    .board {
         transform: scale(0.8);
     }
+}
+
+.result > div > button {
+    padding: 20px;
+    background-color: rgba(var(--main-color) , 0.5 );
+    color: rgb(var(--bright-color));
+    border: 4px solid rgb(var(--action-color));
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .2s linear;
+}
+
+.result > div > button:hover {
+    background: rgb(var(--action-color));
+    color: rgb(var(--accet-color));
+    border-color: rgb(var(--accet-color));
+}
+
+.select {
+    border: 7px solid rgb(var(--action-color));
+    box-shadow: 0 0 20px rgb(var(--action-color));
+}
+
+.description section {
+    margin: 20px 0;
 }

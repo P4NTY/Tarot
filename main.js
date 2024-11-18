@@ -126,15 +126,28 @@ function seeDescription() {
         section.addEventListener('mouseover', (event) => {
             const getParentID = (elem) => elem.parentElement.id ? elem.parentElement : getParentID(elem.parentElement);
             const kit = getParentID(event.target);
-            const child = Array(...event.target.parentElement.parentElement.children).map( (element,index) => element === event.target.parentElement ? index : false ).filter( x => x)[0];
+            const child = Array(...
+                (event.target.nodeName === 'B' ? 
+                    event.target.parentElement.parentElement.parentElement.children 
+                    : event.target.parentElement.parentElement.children)
+                ).map(
+                    (element,index) => element === event.target.parentElement ? index : false
+                ).filter( x => x)[0];
             if (!child) return ;
+            console.log(child)
             const card = kit.querySelector(`.board > div:nth-child(${child})`);
             card.classList.add('select');
         }, false);
         section.addEventListener("mouseout", (event) => {
             const getParentID = (elem) => elem.parentElement.id ? elem.parentElement : getParentID(elem.parentElement);
             const kit = getParentID(event.target);
-            const child = Array(...event.target.parentElement.parentElement.children).map( (element,index) => element === event.target.parentElement ? index : false ).filter( x => x)[0];
+            const child = Array(...
+                (event.target.nodeName === 'B' ? 
+                        event.target.parentElement.parentElement.parentElement.children 
+                        : event.target.parentElement.parentElement.children)
+                    ).map(
+                        (element,index) => element === event.target.parentElement ? index : false
+                    ).filter( x => x)[0];
             if (!child) return ;
             const card = kit.querySelector(`.board > div:nth-child(${child})`);
             card.classList.remove('select');
@@ -230,7 +243,8 @@ function createList(box, question, deck) {
     // Dodanie zdarzenia na wybór pytania
     document.querySelectorAll( '.quest section' ).forEach( section => {
         section.addEventListener( 'click', function(event) {
-            result.question = this.getAttribute('data-name');
+            section.parentElement.style.visibility = "hidden";
+            result.question = this.getAttribute('data-name');           
             choiceStage(question[this.getAttribute('data-name')], shuffle(deck));
         })
     })

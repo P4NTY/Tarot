@@ -292,6 +292,9 @@ p {
 .showChoice .preview .card .description {
     font-size: 24px;
 }
+article {
+    height: 100vh;
+}
 
 article.showChoice > div {
     display: flex;

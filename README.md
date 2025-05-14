@@ -22,7 +22,6 @@ Dostępna na: https://kiszu.pl/Tarot/tarot.html
   
 ## 1.2. ``TO DO``
 - Połączenie z chatGPT (https://chat.openai.com/chat) -- jak na razie zmiarzdżone cenowo
-- Stworzenie obrazków dla każdej karty wraz z uwzględnieniem jej pozycji.
 
 # 2. Technikalia
 
